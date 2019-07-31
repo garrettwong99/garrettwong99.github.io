@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 <p>
-I am currently a Sr. Software Engineer at <a href="https://www.build.com" target="_blank">Build.com</a>. I consider myself as a full-stack developer and equally excited working on both ends. I like complex problem sovling and coming up with an efficient solution.I am passionate about learning new technologies and implementing them. 
+I am currently a third year undergraduate at the University of Texas at Austin, originally from Fremont, California. I began college majoring in mechanical engineering, but I soon found out that I could affect so many more people with code and immediatley switched to Electrical and Computer engineering. My major allows me to pursue my love for software and eletronics while still being able to tinker and physically interact with the world. In my free time, I like boxing, rock climbing, camping, anything active really.
 </p>
 
 Email: <a href="mailto:{{site.email}}?Subject=From Blog Site:">{{site.email}}</a>
