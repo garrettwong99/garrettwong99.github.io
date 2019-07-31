@@ -10,4 +10,4 @@ I am currently a third year undergraduate at the University of Texas at Austin, 
 Email: <a href="mailto:{{site.email}}?Subject=From Blog Site:">{{site.email}}</a>
 
 ## Resume
-<iframe src="https://github.com/garrettwong99/resume.git" width="100%" height="900"></iframe>
+<iframe src="https://docs.google.com/gview?url= https://github.com/garrettwong99/resume.git &embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
