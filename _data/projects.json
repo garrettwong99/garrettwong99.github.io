@@ -8,8 +8,8 @@
 		"tags": ["Angular JS", "Nodejs", "HTML", "API"]
 	},
 	{
-		"name": "Electronics Lab 2 Training Board",
-		"image": "easy-links.jpg",
+		"name": "arduino nano e2 training board",
+		"image": "e2trainingboard.png",
 		"date": "April 2019",
 		"description": "This is a PCB made so that students at UT enigneering program could learn surface mounted soldering, and have a programmable microcontroller at the end of training.",
 		"tags": ["Autodesk Eagle"]
