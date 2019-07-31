@@ -15,7 +15,7 @@
 	},
 	{
 		"name": "UT SVT Current Driver and SOC",
-		"image": "",
+		"image": "UTSVT.PNG",
 		"date": "February 2019",
 		"description": "Configured ADC on STM32f4 microcontroller to read data from two hall effect sensors. Used current readings to manage electrical current for UT Solar vehical team's BPS system. Implemented coulomb counted to calculate state of charge.",
 		"tags": ["C","git","kiCAD"]
