@@ -10,6 +10,7 @@
 	{
 		"name": "arduino nano e2 training board",
 		"image": "e2trainingboard.png",
+		"image": "e2trainingboardsch.png",
 		"date": "April 2019",
 		"description": "This is a PCB made so that students at UT enigneering program could learn surface mounted soldering, and have a programmable microcontroller at the end of training.",
 		"tags": ["Autodesk Eagle"]
