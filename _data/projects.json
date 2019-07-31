@@ -1,11 +1,10 @@
 [
 	{
-		"slug": "etrucking-soft",
-		"name": "Etrucking Software",
-		"image": "etruckingsoft.png",
-		"url": "http://etruckingsoft.com",
-		"date": "Jan 2014",
-		"tags": ["Angular JS", "Nodejs", "HTML", "API"]
+		"name": "319K handheld mario kart",
+		"image": "319Kmariokart.jpg",
+		"date": "December 2018",
+		"description": "Recreated Nintendo's 1992 Super Mario Kart's mode 7 graphics on the TM4C123 microcontroller.Implemented and mounted an SD breakoutboard to expand memory for music. Used UART communication between two microcontrollers.",
+		"tags": ["C","git"]
 	},
 	{
 		"name": "arduino nano e2 training board",
@@ -15,37 +14,25 @@
 		"tags": ["Autodesk Eagle"]
 	},
 	{
-		"name": "Live Band Club",
-		"image": "livebandclub.png",
-		"url": "http://livebandclub.com",
-		"date": "June 2016",
-		"tags": ["HTML","Javascript","PHP"]
+		"name": "UT SVT Current Driver and SOC",
+		"image": "",
+		"date": "February 2019",
+		"description": "Configured ADC on STM32f4 microcontroller to read data from two hall effect sensors. Used current readings to manage electrical current for UT Solar vehical team's BPS system. Implemented coulomb counted to calculate state of charge.",
+		"tags": ["C","git","kiCAD"]
 	},
 	{
-		"name": "Pavement Preservation Treatment Database",
-		"image": "pp_logo.png",
-		"date": "Oct 2015",
-		"url": "http://ceresearch.ecst.csuchico.edu/cp2c/alaskappdb/",
-		"tags": ["PHP","HTML"]
+		"name": "Physical Therapy foot sensor",
+		"image": "PTsensor.PNG",
+		"date": "February 2019",
+		"description": "This pcb was meant to use the TI MSP430 microcontroller and Silicon Lab's BGM123 bluetooth module to send presure measurements on the heals of recovering physical therapy patients to help them recover.",
+		"tags": ["Autodesk Eagle"]
 	},
 	{
-		"name": "Street Saver Certification Program",
-		"image": "streetsaver.png",
-		"date": "Oct 2015",
-		"url": "http://ttc.ecst.csuchico.edu/mtcrcp/login/index.php",
-		"tags": ["PHP","HTML","CMS"]
+		"name": "e-Nable Phoenix prosthetic remake",
+		"image": "hand.jpg",
+		"date": "August 2016",
+		"description": "Remodeled e-Nable's Phoenix prosthetic hand in Fusion 360. Created a parametric workflow and lookup tables to automatically resize the hand for e-Nable's large volunteer group.",
+		"tags": ["Autodesk Fusion 360", "meshmixer"]
 	},
-	{
-		"name": "Tire Derived Aggregate",
-		"image": "tda.png",
-		"date": "Oct 2016",
-		"url": "http://ttc.ecst.csuchico.edu/TDAtc/index.php",
-		"tags": ["PHP","HTML","CMS"]
-	},{
-		"name": "JM Watts Chico",
-		"image": "jmwattschico.png",
-		"url": "http://jmwattschico.com/",
-		"date": "May 2017",
-		"tags": ["HTML","CSS","Javascript"]
-	}
+	
 ]
