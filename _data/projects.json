@@ -8,11 +8,11 @@
 		"tags": ["Angular JS", "Nodejs", "HTML", "API"]
 	},
 	{
-		"name": "Easy Links",
+		"name": "Electronics Lab 2 Training Board",
 		"image": "easy-links.jpg",
-		"date": "May 2017",
-		"description": "This is internal chrome extension, that was developed for my company to provide quick navigation with internal tools.",
-		"tags": ["Extension","Javascript"]
+		"date": "April 2019",
+		"description": "This is a PCB made so that students at UT enigneering program could learn surface mounted soldering, and have a programmable microcontroller at the end of training.",
+		"tags": ["Autodesk Eagle"]
 	},
 	{
 		"name": "Live Band Club",
