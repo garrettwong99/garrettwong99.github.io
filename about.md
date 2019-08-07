@@ -10,5 +10,5 @@ I am currently a third year undergraduate at the University of Texas at Austin, 
 Email: <a href="mailto:{{site.email}}?Subject=From Blog Site:">{{site.email}}</a>
 
 ## Resume
-<a href="https://drive.google.com/open?id=1ZfwyKDv0_E8JzKetSRPtGYFNd0pJp1HJ">Click here for my resume</a>
+<a href="https://drive.google.com/open?id=1ZmD6chRLSBZWDAwRK0b2pIUYnDPHeWcd">Click here for my resume</a>
 
