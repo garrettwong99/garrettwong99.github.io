@@ -18,5 +18,5 @@ In the upcoming Fall 2020, I will be interning at Toyota as an Electronics Syste
 Email: <a href="mailto:{{site.email}}?Subject=From Blog Site:">{{site.email}}</a>
 
 ## Resume
-<a href="https://drive.google.com/open?id=1Z-XsortbQ_3S5tQck-AG8sqWnpvsHuMu">Click here for my resume</a>
+<a href="https://drive.google.com/open?id=5da0bd14f1569300190978d6">Click here for my resume</a>
 
