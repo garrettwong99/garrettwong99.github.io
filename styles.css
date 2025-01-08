@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #ffffff; /* Change background to white */
 }
 
 .container {
@@ -50,6 +51,28 @@ body {
     text-decoration: underline;
 }
 
+/* Static Header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; /* White background */
+    color: #556b2f; /* Dark olive green text */
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1000;
+}
+
+.header a {
+    color: #556b2f; /* Dark olive green text */
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
 /* Standard Link Styles */
 a {
     color: #556b2f; /* Dark olive green links */
@@ -76,9 +99,9 @@ h1 {
 
 h2 {
     margin-top: 1.875em;
-    border-bottom: 0.125em solid #20b2aa;
+    border-bottom: 0.125em solid #556b2f; /* Change to dark olive green */
     padding-bottom: 0.3125em;
-    text-align: center;
+    text-align: left; /* Align to the left */
 }
 
 h3 {
@@ -124,6 +147,29 @@ li:last-child {
     margin-top: 0.3125em;
 }
 
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 1.25em;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 1.25em;
+}
+
+.project-item {
+    padding: 20px;
+    border: 2px solid #556b2f;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #ffffff; /* Change background to white */
+}
+
 /* About Me Section */
 .about-me {
     margin-top: 1.25em;
@@ -157,7 +203,7 @@ li:last-child {
 
 .about-me p {
     font-size: 1em;
-    color: #deb887;
+    color: #696969; /* Dark grey */
     line-height: 1.5em;
     margin: 0;
 }
