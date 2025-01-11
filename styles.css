@@ -8,6 +8,7 @@ body {
     padding: 0;
     line-height: 1.6;
     background-color: #ffffff; /* Change background to white */
+    text-align: center; /* Center all text */
 }
 
 .container {
@@ -15,8 +16,7 @@ body {
     max-width: 900px;
     margin: 40px auto;
     padding: 25px;
-    border: 2px solid #556b2f; /* Dark olive green border */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+    /* Remove box shadow */
 }
 
 /* Navigation Bar */
@@ -51,31 +51,29 @@ body {
     text-decoration: underline;
 }
 
-/* Static Header */
-.header {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff; /* White background */
-    color: #556b2f; /* Dark olive green text */
-    padding: 1em;
+.navbar-brand, .navbar-subtitle, .navbar-nav {
     text-align: center;
-    font-size: 1.5em;
-    font-family: 'Courier New', Courier, monospace;
-    z-index: 1000;
+    width: 100%;
 }
-
-.header a {
-    color: #556b2f; /* Dark olive green text */
-    text-decoration: none;
+.navbar-brand {
+    color: #ab7650!important; /* Ensure the color is applied */
+    font-size: 2rem;
+    font-weight: bold;
 }
-
-.header a:hover {
-    text-decoration: underline;
+.navbar-subtitle {
+    font-size: 0.8rem;
+    color: #8e8e8e;
+}
+.navbar-nav {
+    justify-content: center;
+}
+.nav-link {
+    color: #ab7650!important; /* Ensure the color is applied */
 }
 
 /* Standard Link Styles */
 a {
-    color: #556b2f; /* Dark olive green links */
+    color: #ab7650; /* Match the navbar color */
     text-decoration: underline;
 }
 a:hover {
@@ -164,9 +162,8 @@ li:last-child {
 
 .project-item {
     padding: 20px;
-    border: 2px solid #556b2f;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* Remove box shadow */
     background-color: #ffffff; /* Change background to white */
 }
 
@@ -178,15 +175,16 @@ li:last-child {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center; /* Center content */
+    text-align: center; /* Center text */
 }
 
 .about-me img {
-    width: 9.375em;
-    height: 9.375em;
-    border-radius: 50%;
+    width: 15em; /* Increase width */
+    height: 15em; /* Increase height */
+    border-radius: 50%; /* Make the image circular */
     object-fit: cover;
-    border: 0.1875em solid #556b2f;
-    margin-right: 1.25em;
+    margin: 1.25em auto; /* Center image */
     flex-shrink: 0;
 }
 
@@ -213,40 +211,6 @@ li:last-child {
     margin-top: 1em;
     font-style: italic;
     color: #2f4f4f;
-}
-
-/* Back to Top Link */
-.back-top {
-    text-align: right;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-.back-top a {
-    text-decoration: none;
-    color: #556b2f;
-}
-.back-top a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-}
-
-footer p {
-    margin: 0;
-    color: #556b2f;
-}
-
-footer a {
-    color: #556b2f;
-    text-decoration: underline;
-}
-footer a:hover {
-    color: #8b4513;
 }
 
 /* Responsive Design */
