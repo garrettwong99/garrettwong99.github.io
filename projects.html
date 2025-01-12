@@ -42,29 +42,127 @@
             <section id="projects" class="projects">
                 <div class="row">
                     <div class="col-12">
-                        <div class="row">
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img src="assets/project_imgs/319Kmariokart.jpg" alt="Project 1" class="img-fluid">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img src="assets/project_imgs/e2trainingboard.PNG" alt="Project 2" class="img-fluid">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img src="assets/project_imgs/solar.jpg" alt="Project 3" class="img-fluid">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img src="assets/project_imgs/PTsensor2.PNG" alt="Project 4" class="img-fluid">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img src="assets/project_imgs/hand.jpg" alt="Project 5" class="img-fluid">
-                            </div>
-                            <!-- Add more images as needed -->
+                        <div class="row" id="projects-container">
+                            <!-- Project items will be injected here by JavaScript -->
                         </div>
                     </div>
                 </div>
             </section>
         </main>
     </div>
+
+    <script>
+        const projects = [
+            { 
+                img: 'assets/project_imgs/mario/mariokartdrift.gif', 
+                alt: '1992 Mario Kart in C', 
+                description: '1992 Mario Kart in C', 
+                details: `
+                    <p>Inspired by playing my dad's college video games as a kid, my best friend and I recreated Nintendo's 1992 Super Mario Kart for our EE319K final project.</p>
+                    <p>We implemented Nintendo's <a href="https://en.wikipedia.org/wiki/Mode_7" target="_blank" rel="noopener noreferrer">Mode 7</a> graphics on the TM4C123 microcontroller, transforming 2D bitmaps into a 3D racetrack.</p>
+                    <p>I mounted an SD breakout board to expand memory for music, and we used UART communication between two microcontrollers.</p>
+                    <p>Since we didn't have time to implement all the fancy graphics, I ended up re-drawing the charachters and the racetracks in Microsoft Paint</p>
+                    <p>This project was a lot of fun. We ended up winning our class competition that year.</p>
+                    <p>Here is a link to the <a href="https://github.com/garrettwong99/319K-Mario-Cart-Game/tree/master" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+                    <img src="assets/project_imgs/mario/319Kmariokart.jpg" alt="Assembled Game" class="img-fluid mb-3">
+                    <img src="assets/project_imgs/mario/me_sihyung.jpg" alt="Sihyung Woo and I" class="img-fluid mb-3">
+                ` 
+            },
+            { 
+                img: 'assets/project_imgs/marblemaze.png', 
+                alt: 'Marble Maze', 
+                description: 'Marble Maze', 
+                details: `
+                    <p>Programmed a Marble Maze game in C using TI’s 32-bit ARM microcontroller. Converted the accelerometer data from my phone to a PWM to power the servos on the game.
+Finallay, connected the phone and game using ESP8366 wifi module</p>
+                    <p>See the game in the youtube video below</p>
+                    <a href="https://www.youtube.com/watch?v=D5CKl7UrgRY" target="_blank" rel="noopener noreferrer">
+                        <img src="https://i9.ytimg.com/vi_webp/D5CKl7UrgRY/maxresdefault.webp?v=5eb407dc&sqp=CIzsjLwG&rs=AOn4CLC7rj1hEx92iSKQDFc3jvs0JMuA0g" alt="Marble Maze Video" class="img-fluid mb-3">
+                    </a>
+                ` 
+            },
+            { 
+                img: 'assets/project_imgs/e2trainingpcb/e2trainingboard.PNG', 
+                alt: 'Programmable PCB for UT MakerStudio', 
+                description: 'Programmable PCB for UT MakerStudio', 
+                details: `
+                    <p>As a student worker at the UT MakerStudio, I designed a PCB for our electronics lab training.</p>
+                    <p>This way students could learn how to do SMB soldering and have a functional programmable keychain after they finished!</p>
+                    <img src="assets/project_imgs/e2trainingpcb/e2trainingboard.PNG" alt="Project 2 Detail" class="img-fluid mb-3">
+                    <img src="assets/project_imgs/e2trainingpcb/e2trainingboardsch.PNG" alt="Project 2 Detail" class="img-fluid mb-3">
+                ` 
+            },
+            { 
+                img: 'assets/project_imgs/solarvehicle/solar.jpg', 
+                alt: 'Solar Vehicle', 
+                description: 'State of Charge – UT Solar Vehicle Team', 
+                details: `
+                    <img src="assets/project_imgs/solarvehicle/solar.jpg" alt="Project 3 Detail" class="img-fluid mb-3">
+                    <p>Configured STM32f4 microcontroller to read data from two hall effect sensors.</p>
+                    <p>Used current readings to manage electrical current for UT’s Solar vehicle team’s BPS system.</p>
+                    <p>Implementing coulomb counting to calculate state of charge.</p>
+                    <p>Learn more about the UT Solar Vehicle Team <a href="https://www.longhornracing.org/solar-vehicle-team" target="_blank" rel="noopener noreferrer">here</a></p> ` 
+            },
+            { 
+                img: 'assets/project_imgs/enable/hand.jpg', 
+                alt: 'e-nable prosthetic hand', 
+                description: 'E-NABLE prosthetic hand', 
+                details: `
+                    <img src="assets/project_imgs/enable/hand.jpg" alt="E-NABLE prostheic hand" class="img-fluid mb-3">
+                    <p>E-NABLE is a global network of volunteers who use 3D printing to create free prosthetic hands for those in need.</p>
+                    <p>I had the privilege of modeling the "Phoenix Hand" in Fusion 360 for Autodesk and E-NABLE.</p>
+                    <p>The only files I had to work with were the STLs, so I had to reverse engineer the hand to create a parametric model.</p>
+                    <p>Learn more about E-NABLE <a href="https://enablingthefuture.org/" target="_blank" rel="noopener noreferrer">here</a></p>
+                ` 
+            },
+            // Add more projects as needed
+        ];
+
+        const projectsContainer = document.getElementById('projects-container');
+
+        projects.forEach((project, index) => {
+            const projectDiv = document.createElement('div');
+            projectDiv.className = 'col-6 col-md-4 col-lg-3 mb-4';
+            projectDiv.innerHTML = `
+                <button class="btn btn-link p-0" type="button" data-toggle="modal" data-target="#projectModal${index}">
+                    <img src="${project.img}" alt="${project.alt}" class="img-fluid">
+                </button>
+                <p>${project.description}</p>
+            `;
+            projectsContainer.appendChild(projectDiv);
+
+            const modalDiv = document.createElement('div');
+            modalDiv.className = 'modal fade';
+            modalDiv.id = `projectModal${index}`;
+            modalDiv.tabIndex = -1;
+            modalDiv.setAttribute('aria-labelledby', `projectModalLabel${index}`);
+            modalDiv.setAttribute('aria-hidden', 'true');
+            modalDiv.innerHTML = `
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel${index}">${project.alt}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ${project.details}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modalDiv);
+        });
+    </script>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <footer class="text-center">
         <nav class="navbar navbar-expand-lg navbar-light flex-column text-center">
