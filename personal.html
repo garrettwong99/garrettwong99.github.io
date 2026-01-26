@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos - Garrett Wong</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        a {
+            color: #ab7650 !important;
+        }
+        .personal-img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .img-btn {
+            padding: 0;
+            border: none;
+            background: none;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light flex-column text-center">
+        <a class="navbar-brand" href="#">GARRETT WONG</a>
+        <div class="navbar-subtitle">SOFTWARE ENGINEER</div>
+        <div class="w-100 d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="assets/resume.pdf" target="_blank">RESUME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="personal.html">PHOTOS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <p>I am a husband and father of identical twins. I also have a passion for jiujitsu!</p>
+        <div class="row" id="photos-container">
+            <!-- Photos will be injected here by JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        // Add captions here if you want (index matches image number)
+        const captions = {
+            1: "Got my degree + my to be wife",
+            2: "Got married :). June 5th 2022",
+            3: "Blue Belt in JiuJitsu",
+            4: "First competition as a blue belt. Gold no-gi. Silver gi",
+            5: "Had to run from the gi mats to get on the podium",
+            6: "Brandon Moreno. Maybe not today. Maybe not tommorow. But I will be champion on day",
+            7: "Nicholas Meregali!",
+            8: "Masakazu Imanari",
+            9: "Masakazu Imanari",
+            9: "John Danaher / Gordan Ryan",
+            10: "Lighting was good",
+            11: "Harvesting some prickly pear cactus",
+            12: "My boys are born. 10-28-2025",
+            13: "photoshoot!",
+            14: "Christmas photoshoot!",
+            15: "This is my dog. She came with the house we bought",
+            17: "I didn't cut off Theo. This camera is hard to operate",
+            18: "snow day",
+        };
+
+        const totalPhotos = 17;
+        const container = document.getElementById('photos-container');
+
+        for (let i = 1; i <= totalPhotos; i++) {
+            const imgPath = `assets/personal/${i}.jpg`;
+            const caption = captions[i] || '';
+
+            // Create grid item with button
+            const col = document.createElement('div');
+            col.className = 'col-4 mb-4';
+            col.innerHTML = `
+                <button class="img-btn" data-toggle="modal" data-target="#modal${i}">
+                    <img src="${imgPath}" alt="Photo ${i}" class="img-fluid personal-img">
+                </button>
+            `;
+            container.appendChild(col);
+
+            // Create modal
+            const modal = document.createElement('div');
+            modal.className = 'modal fade';
+            modal.id = `modal${i}`;
+            modal.tabIndex = -1;
+            modal.setAttribute('aria-hidden', 'true');
+            modal.innerHTML = `
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="${imgPath}" alt="Photo ${i}" class="img-fluid mb-3">
+                            ${caption ? `<p>${caption}</p>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer class="text-center">
+        <nav class="navbar navbar-expand-lg navbar-light flex-column text-center">
+            <div class="w-100 d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/garrettwong99">GITHUB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/garrettwong99/">LINKEDIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:garrettwong99@gmail.com">EMAIL ME</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
