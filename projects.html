@@ -29,7 +29,7 @@
                     <a class="nav-link" href="projects.html">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="certifications.html">CERTIFICATIONS</a>
+                    <a class="nav-link" href="personal.html">PHOTOS</a>
                 </li>
             </ul>
         </div>
@@ -53,8 +53,22 @@
 
     <script>
         const projects = [
-            { 
-                img: 'assets/project_imgs/mario/mariokartdrift.gif', 
+            {
+                img: 'assets/project_imgs/ask_seek_knock_example.png',
+                alt: 'Ask Seek Knock',
+                description: 'Ask Seek Knock',
+                details: `
+                    <img src="assets/project_imgs/ask_seek_knock_example.png" alt="Ask Seek Knock" class="img-fluid mb-3">
+                    <p>The name comes from Matthew 7:7 — <em>"Ask and it will be given to you; seek and you will find; knock and the door will be opened to you."</em></p>
+                    <p>Inspired by the book <a href="https://www.amazon.com/Christ-School-Prayer-Andrew-Murray/dp/1603865314" target="_blank" rel="noopener noreferrer">With Christ in the School of Prayer</a>.</p>
+                    <p>This is a project I'm actively working on to help users (which right now consists of my family and friends) organize and reflect on their prayers. I wanted a platform where I could show that God still answers prayers, and to help myself build a better habit of prayer.</p>
+                    <p>Features include tracking unanswered and answered prayers, sharing prayers with friends, and community support for small groups.</p>
+                    <p><strong>Tech Stack:</strong> The frontend is built with React Native and Expo. The backend is a FastAPI REST API with SQLAlchemy ORM, supporting both PostgreSQL in production and SQLite for local development. Authentication is handled with JWT tokens and bcrypt password hashing.</p>
+                    <p>Make an account and check out the web app at <a href="https://www.askseekknock.online" target="_blank" rel="noopener noreferrer">www.askseekknock.online</a></p>
+                `
+            },
+            {
+                img: 'assets/project_imgs/mario/mariokartdrift.gif',
                 alt: '1992 Mario Kart in C', 
                 description: '1992 Mario Kart in C', 
                 details: `
